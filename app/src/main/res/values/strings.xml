@@ -4,4 +4,13 @@
     <string name="passwd">Contraseña</string>
     <string name="btnEntrar">Entrar</string>
     <string name="btnRegistrar">Registrar</string>
+    <string name="toastlogin">Introduzca login</string>
+    <string name="toastpasswd">Introduzca contraseña</string>
+    <string name="menu">Cerrar sesion</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+    <string name="email">Introduce tu email</string>
+    <string name="usuario">Introduce tu usuario</string>
+    <string name="password">Introduce tu contraseña</string>
+    <string name="registro">Regístrate</string>
+    <string name="vacio">Rellene todos los campos</string>
 </resources>

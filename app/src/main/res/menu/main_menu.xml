@@ -1,0 +1,11 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.a21201130.uemcar.MainActivity">
+
+<item android:id="@+id/action_ver_cuentos"
+android:title="@string/menu"
+android:orderInCategory="1"
+app:showAsAction="never"/>
+
+</menu>

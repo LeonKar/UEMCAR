@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Toast;
 
 public class LoginActivity extends AppCompatActivity {
     EditText etUser, etPasswd;
@@ -18,17 +19,22 @@ public class LoginActivity extends AppCompatActivity {
         etPasswd = (EditText) findViewById(R.id.etPasswd);
         btnEntrar = (Button) findViewById(R.id.btnEntrar);
         btnRegistrar = (Button) findViewById(R.id.btnRegistrar);
-        etUser.setText("login");
-        etPasswd.setText("passwd");
-        btnEntrar.setText("btnEntrar");
-        btnRegistrar.setText("btnRegistrar");
     }
 
     public void entrar(View view){
-        Intent i = new Intent(this, MainActivity.class);
+        if (etUser.getText().length() == 0) {
+            Toast.makeText(LoginActivity.this, R.string.toastlogin, Toast.LENGTH_SHORT).show();
+        }else if(etPasswd.getText().length() == 0) {
+            Toast.makeText(LoginActivity.this, R.string.toastpasswd, Toast.LENGTH_SHORT).show();
+        }else{
+            Intent i = new Intent(this, MainActivity.class);
+            startActivity(i);
+        }
+
     }
 
     public void registrar(View view){
-        Intent i = new Intent(this, SignInActivity.class);
+            Intent i = new Intent(this, SignInActivity.class);
+            startActivity(i);
     }
 }
